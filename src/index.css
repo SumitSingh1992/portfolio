@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --color-paper: #FAFAFC;
+  --color-ink: #1A1A2E;
+  --color-accent: #6C5CE7;
+  --color-accent-light: #A29BFE;
+  --color-accent-soft: #EEECFC;
+  --color-line: #E4E1F5;
+
+  --font-display: 'Instrument Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background: linear-gradient(180deg, #FAFAFC 0%, #F3F1FC 100%);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+}
+
+.blob-shape {
+  border-radius: 62% 38% 41% 59% / 55% 40% 60% 45%;
+  animation: blob-morph 10s ease-in-out infinite;
+}
+
+@keyframes blob-morph {
+  0%, 100% { border-radius: 62% 38% 41% 59% / 55% 40% 60% 45%; }
+  50% { border-radius: 42% 58% 65% 35% / 45% 60% 40% 55%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-shape { animation: none; }
+}
+
+@media (active: active) {
+    .active\:text-accent:active {
+        color: var(--color-accent);
+    }
+}
