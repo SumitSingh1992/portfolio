@@ -40,7 +40,7 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 w-full flex justify-between items-center px-6 sm:px-8 md:px-24 py-6 backdrop-blur-md bg-paper/70 z-50">
-      <span className="font-mono text-sm font-medium">SK</span>
+      <span className="font-mono text-sm font-medium">Sumit Kumar</span>
 
       <div className="hidden md:flex gap-8 font-mono text-sm">
         {links.map((l) => {
