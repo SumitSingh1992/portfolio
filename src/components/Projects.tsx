@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import projectImg1 from "../assets/project-placeholder-1.jpg";
+// import projectImg1 from "../assets/medflow-screenshot.jpg"; // add once you have a real screenshot
 
 const projects = [
   {
-    title: "Project Name",
-    desc: "One or two lines on what it does and why it matters.",
-    stack: ["React", "Module Federation"],
-    link: "#",
-    image: projectImg1, // import from src/assets
+    title: "MedFlow",
+    desc: "Full-stack healthcare imaging platform for patient registration, medical study management, and radiology workflows. Role-based access for patients, technicians, radiologists, and doctors. In active development.",
+    stack: ["Angular", "TypeScript", "NestJS", "PostgreSQL", "Docker"],
+    link: "https://github.com/SumitSingh1992/medflow",
+    status: "In development",
+    image: undefined, // swap in a real screenshot import here when ready
   },
 ];
 
@@ -22,16 +23,24 @@ export default function Projects() {
         {projects.map((p) => (
           <motion.a
             href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
             key={p.title}
             className="group relative overflow-hidden bg-paper"
           >
-            <div className="aspect-video overflow-hidden">
-              <img
-                src={p.image}
-                alt={p.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            {p.image ? (
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            ) : (
+              <div className="aspect-video flex items-center justify-center bg-accent/5 border-b border-line">
+                <span className="font-mono text-xs text-ink/40">{p.status ?? "Preview coming soon"}</span>
+              </div>
+            )}
             <div className="p-8">
               <h4 className="text-2xl font-semibold flex items-center gap-2">
                 {p.title}
