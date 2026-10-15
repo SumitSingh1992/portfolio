@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import crickAuctionImage from "../assets/crickAuction.png";
 // import projectImg1 from "../assets/medflow-screenshot.jpg"; // add once you have a real screenshot
 
 const projects = [
@@ -18,7 +19,7 @@ const projects = [
     repoLink: "https://github.com/SumitSingh1992/cricket-auction-app",
     liveLink: "https://cricket-auction-app-five.vercel.app/",
     status: "Live",
-    image: "../assets/crickAuction.png", // swap in a real screenshot import here when ready
+    image: crickAuctionImage, // swap in a real screenshot import here when ready
   },
   {
     title: "MedFlow",
