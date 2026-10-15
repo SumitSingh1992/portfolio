@@ -18,7 +18,7 @@ const projects = [
     repoLink: "https://github.com/SumitSingh1992/cricket-auction-app",
     liveLink: "https://cricket-auction-app-five.vercel.app/",
     status: "Live",
-    image: "src/assets/crickAuction.png", // swap in a real screenshot import here when ready
+    image: "../assets/crickAuction.png", // swap in a real screenshot import here when ready
   },
   {
     title: "MedFlow",
