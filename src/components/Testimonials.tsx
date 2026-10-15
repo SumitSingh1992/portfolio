@@ -1,6 +1,6 @@
 const testimonials = [
-  { name: "Manager Name", role: "Engineering Manager", quote: "Add a real quote from a colleague here." },
-  { name: "Colleague Name", role: "Tech Lead", quote: "Add another real quote here." },
+  // { name: "Manager Name", role: "Engineering Manager", quote: "Add a real quote from a colleague here." },
+  { name: "Rakesh CR", role: "Senior Consultant", quote: "I had the pleasure of working with Sumit at EY, and he was one of the most dependable engineers on our team. He is a strong Angular developer with a great eye for detail, and he consistently delivered clean, well-structured and responsive user interfaces. What sets him apart is that he didn't limit himself to the frontend. He also took on backend work and handled it with the same ownership and quality, which made him great at connecting the UI with APIs and solving problems end to end. He picks up new things quickly, communicates clearly and is always willing to help his teammates. Any team would be lucky to have Sumit, and I highly recommend him." },
 ];
 
 export default function Testimonials() {
